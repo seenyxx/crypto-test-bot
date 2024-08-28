@@ -2,14 +2,20 @@
   "name": "crypto-test-bot",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc && node --env-file=.env ./build/"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "ccxt": "^4.3.89",
+    "quick.db": "^9.1.7",
+    "trading-signals": "^5.0.4",
     "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.1"
   }
 }
